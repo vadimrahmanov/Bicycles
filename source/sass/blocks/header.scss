@@ -101,15 +101,9 @@
 
 @media (max-width: $tablet) {
   .header {
-    background-position: top center;
-    background-image: url("../img/banner-tablet.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
-    background-color: $white;
-    background-size: 768px, auto;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/banner-tablet@2x.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
-    }
     min-height: auto;
+    padding-bottom: 30px;
+    background: none;
   }
 
   .header__main-container {
@@ -123,8 +117,17 @@
   }
 
   .header__wrapper {
+    background-position: top center;
+    background-image: url("../img/banner-tablet.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
+    background-color: #0e0e0e;
+    background-size: 768px, auto;
+    background-repeat: no-repeat;
     margin-top: 0;
     flex-direction: column;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/banner-tablet@2x.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
+    }
   }
 
   .header__about-container {
@@ -172,5 +175,51 @@
   .header__form-submit {
     width: 321px;
     padding-top: 2px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .header__wrapper {
+    background-size: 319px, auto;
+    background-image: url("../img/banner-mobile.jpg"), linear-gradient(to top, $white 48%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/banner-mobile@2x.jpg"), linear-gradient(to top, $white 48%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
+    }
+  }
+
+  .header__logo {
+    padding-left: 16px;
+  }
+
+  .header__title {
+    font-size: 30px;
+    line-height: 42px;
+    width: 288px;
+    padding-top: 71px;
+  }
+
+  .header__description {
+    font-size: 18px;
+    line-height: 32px;
+    width: 288px;
+  }
+
+  .header__form-container {
+    margin-left: 16px;
+    margin-top: 122px;
+  }
+
+  .header__form-title {
+    width: 288px;
+    margin-bottom: 20px;
+  }
+
+  .header__form {
+    width: 288px;
+  }
+
+  .header__form-submit {
+    width: 286px;
   }
 }
