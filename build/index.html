@@ -11,6 +11,9 @@
   <header class="header">
     <div class="header__main-container">
       <nav class="navigation">
+        <button class="navigation__button" type="button">
+          <span class="visually-hidden">Кнопка открытия/закрытия меню</span>
+        </button>
         <ul class="navigation__list">
           <li class="navigation__list-item">
             <a class="navigation__list-item-link" href="#">О нас</a>
@@ -37,8 +40,8 @@
         <div class="header__form-container">
           <p class="header__form-title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <form class="header__form" action="https://echo.htmlacademy.ru/" method="GET">
-            <input class="header__form-input" type="text" name="name" placeholder="Введите Ваше Имя">
-            <input class="header__form-input" type="tel" name="tel" placeholder="Введите Ваш номер телефона">
+            <input class="header__form-input" type="text" name="name" placeholder="Введите Ваше Имя" required="">
+            <input class="header__form-input" type="tel" name="tel" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" required="">
             <button class="header__form-submit" type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
@@ -47,5 +50,6 @@
   </header>
   <main>
   </main>
+  <script src="js/main.js"></script>
 </body>
 </html>
