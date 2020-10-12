@@ -44,7 +44,7 @@
       z-index: -1;
       width: 180px;
       height: 180px;
-      background-image: url("../img/Ellipse\ 1.svg");
+      background-image: url("../img/ellipse1.svg");
     }
   }
 
@@ -59,7 +59,7 @@
       top: -18px;
       width: 47px;
       height: 47px;
-      background-image: url("../img/Rectangle\ 7.svg");
+      background-image: url("../img/rectangle.svg");
     }
 
     &::after {
@@ -69,7 +69,7 @@
       bottom: 31px;
       width: 47px;
       height: 47px;
-      background-image: url("../img/Rectangle\ 7.svg");
+      background-image: url("../img/rectangle.svg");
     }
   }
 
@@ -84,7 +84,7 @@
       top: -33px;
       width: 95px;
       height: 95px;
-      background-image: url("../img/Ellipse\ 2.svg");
+      background-image: url("../img/ellipse2.svg");
     }
   }
 }
@@ -136,7 +136,8 @@
     &:nth-child(3n+2) {
       margin-top: 0;
 
-      &::before, &::after {
+      &::before,
+      &::after {
         display: none;
       }
     }
