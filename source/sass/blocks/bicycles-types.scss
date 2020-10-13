@@ -101,6 +101,10 @@
 }
 
 @media (max-width: $tablet) {
+  .bicycles-types {
+    padding-bottom: 18px;
+  }
+
   .bicycles-types__title {
     font-size: 24px;
     line-height: 41px;
@@ -158,6 +162,7 @@
 @media (max-width: $mobile) {
   .bicycles-types {
     margin-top: 16px;
+    padding-bottom: 10px;
   }
 
   .bicycles-types__title {

@@ -2,6 +2,7 @@
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 72px;
+  padding-bottom: 100px;
 }
 
 .footer__title {
@@ -33,8 +34,127 @@
   border: none;
   background-image: url("../img/map.png");
   background-size: 957px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: block;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/map@2x.png");
+  }
+}
+
+.footer__contacts-container {
+  display: flex;
+  margin: 0 auto;
+  width: 564px;
+  margin-top: 35px;
+}
+
+.footer__contacts-email {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contacts-tel {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+}
+
+.footer__contacts-tel-icon {
+  padding-right: 17px;
+  fill: $white;
+}
+
+.footer__contacts-email-icon {
+  padding-right: 15px;
+}
+
+.footer__contacts-email-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer__contacts-tel-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: $tablet) {
+  .footer__main-container {
+    padding-top: 10px;
+  }
+
+  .footer__title {
+    font-size: 24px;
+    line-height: 30px;
+    width: 181px;
+  }
+
+  .footer__address {
+    width: 629px;
+    margin-top: 20px;
+  }
+
+  .footer__map {
+    width: 698px;
+    height: 545px;
+    margin-top: 20px;
+    background-image: url("../img/map-tablet.png");
+    background-size: 698px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+    }
+  }
+
+  .footer__contacts-container {
+    width: 558px;
+    margin-top: 17px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .footer__main-container {
+    padding-top: 11px;
+    padding-bottom: 32px;
+  }
+
+  .footer__title {
+    font-size: 18px;
+    line-height: 30px;
+    width: 136px;
+  }
+
+  .footer__address {
+    width: 270px;
+  }
+
+  .footer__map {
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/map-mobile.png");
+    background-size: 320px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-mobile@2x.png");
+    }
+  }
+
+  .footer__contacts-container {
+    flex-direction: column;
+    width: 288px;
+    align-items: center;
+    margin-top: 31px;
+    min-height: 72px;
+    justify-content: space-between;
+  }
+
+  .footer__contacts-tel {
+    margin-left: 0;
   }
 }
