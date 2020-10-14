@@ -1,11 +1,16 @@
 'use strict';
 
-var navigationHandler = document.querySelector('.navigation__button');
-var navigation = document.querySelector('.navigation__list');
+(function () {
+  var navigation = document.querySelector('.navigation');
+  var navigationHandler = document.querySelector('.navigation button');
+  var navigationList = navigation.querySelector('ul');
 
-navigation.classList.add('navigation__list--close');
+  navigationList.classList.add('nav-close');
 
-navigationHandler.addEventListener('click', function () {
-  navigation.classList.toggle('navigation__list--close');
-  navigationHandler.classList.toggle('navigation__button--opened');
-});
+  navigationHandler.addEventListener('click', function () {
+    navigationList.classList.toggle('nav-close');
+    navigationList.classList.toggle('nav-opened');
+    navigation.classList.toggle('navigation--opened');
+    navigationHandler.classList.toggle('nav-btn-opened');
+  });
+})();

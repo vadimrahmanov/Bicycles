@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-.bicycles-types__title {
+.bicycles-types__main-container h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -19,7 +19,7 @@
   margin: 0 auto;
 }
 
-.bicycles-types__list {
+.bicycles-types__main-container ul {
   @include list-reset;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@
   margin-right: 145px;
 }
 
-.bicycles-types__list-item {
+.bicycles-types__main-container li {
   margin-bottom: 147px;
 
   &:nth-child(3n+1) {
@@ -89,7 +89,7 @@
   }
 }
 
-.bicycles-types__list-item-description {
+.bicycles-types__main-container h3 {
   font-size: 22px;
   font-weight: 600;
   line-height: 34px;
@@ -105,26 +105,26 @@
     padding-bottom: 18px;
   }
 
-  .bicycles-types__title {
+  .bicycles-types__main-container h2 {
     font-size: 24px;
     line-height: 41px;
     padding-top: 50px;
     width: 230px;
   }
 
-  .bicycles-types__list {
+  .bicycles-types__main-container ul {
     margin-top: 30px;
     margin-left: 89px;
     margin-right: 89px;
     justify-content: space-around;
   }
 
-  .bicycles-types__list-item-image {
+  .bicycles-types__main-container img {
     width: 270px;
     height: 300px;
   }
 
-  .bicycles-types__list-item {
+  .bicycles-types__main-container li {
     margin-bottom: 50px;
 
     &:nth-child(3n+1) {
@@ -165,17 +165,17 @@
     padding-bottom: 10px;
   }
 
-  .bicycles-types__title {
+  .bicycles-types__main-container h2 {
     margin-bottom: 30px;
   }
 
-  .bicycles-types__list {
+  .bicycles-types__main-container ul {
     margin: 0 auto;
     flex-direction: column;
     width: 270px;
   }
 
-  .bicycles-types__list-item {
+  .bicycles-types__main-container li {
     margin-bottom: 42px;
 
     &:nth-child(3n+1) {

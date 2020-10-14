@@ -29,11 +29,11 @@
   margin-top: 12px;
 }
 
-.header__logo {
+.header__about-container a {
   display: block;
 }
 
-.header__title {
+.header__about-container h1 {
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
@@ -42,7 +42,7 @@
   margin-top: 26px;
 }
 
-.header__description {
+.header__about-container p {
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
@@ -52,7 +52,7 @@
   margin-top: 25px;
 }
 
-.header__form-title {
+.header__form-container p {
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
@@ -63,12 +63,23 @@
   margin-bottom: 19px;
 }
 
-.header__form {
+.header__form-container form {
   display: flex;
   flex-direction: column;
 }
 
-.header__form-input {
+.header__form-container label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.header__form-container input {
   font-size: 15px;
   line-height: 24px;
   background: $white;
@@ -84,9 +95,17 @@
     color: #1c1c1c;
     opacity: 0.5;
   }
+
+  &:hover {
+    border-color: #0ad9c6;
+  }
+
+  &:focus {
+    outline-color: #0ad9c6;
+  }
 }
 
-.header__form-submit {
+.header__form-container button {
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
@@ -111,7 +130,7 @@
     position: relative;
   }
 
-  .header__logo {
+  .header__about-container a {
     padding-left: 23px;
     padding-top: 25px;
   }
@@ -134,7 +153,7 @@
     margin-top: 0;
   }
 
-  .header__title {
+  .header__about-container h1 {
     font-size: 30px;
     line-height: 42px;
     width: 525px;
@@ -143,7 +162,7 @@
     padding-top: 85px;
   }
 
-  .header__description {
+  .header__about-container p {
     font-size: 18px;
     line-height: 32px;
     text-align: center;
@@ -158,11 +177,11 @@
     margin-top: 132px;
   }
 
-  .header__form {
+  .header__form-container form {
     width: 100%;
   }
 
-  .header__form-title {
+  .header__form-container p {
     font-size: 18px;
     color: #000000;
     margin-bottom: 30px;
@@ -170,11 +189,11 @@
     width: 100%;
   }
 
-  .header__form-input {
+  .header__form-container input {
     padding-left: 23px;
   }
 
-  .header__form-submit {
+  .header__form-container button {
     width: 100%;
     padding-top: 2px;
   }
@@ -190,11 +209,11 @@
     }
   }
 
-  .header__logo {
+  .header__about-container a {
     padding-left: 16px;
   }
 
-  .header__title {
+  .header__about-container h1 {
     font-size: 30px;
     line-height: 42px;
     min-height: 155px;
@@ -203,7 +222,7 @@
     padding-top: 71px;
   }
 
-  .header__description {
+  .header__about-container p {
     font-size: 18px;
     line-height: 32px;
     min-height: 115px;
@@ -217,18 +236,10 @@
     margin-top: 122px;
   }
 
-  .header__form-title {
+  .header__form-container p {
     min-height: 84px;
     margin: 0 auto;
     margin-top: 18px;
     margin-bottom: 20px;
-  }
-
-  .header__form {
-    width: 100%;
-  }
-
-  .header__form-submit {
-    width: 100%;
   }
 }
