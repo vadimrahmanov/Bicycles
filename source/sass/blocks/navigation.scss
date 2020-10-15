@@ -29,6 +29,14 @@
   color: $white;
   letter-spacing: -0.005em;
   opacity: 0.7;
+
+  &:hover {
+    color: $light-blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .navigation button {

@@ -97,11 +97,11 @@
   }
 
   &:hover {
-    border-color: $light-blue;
+    outline: 2px solid $light-blue;
   }
 
   &:focus {
-    outline-color: $light-blue;
+    outline: 2px solid $light-blue;
   }
 }
 
@@ -116,6 +116,14 @@
   border: none;
   min-height: 51px;
   cursor: pointer;
+
+  &:hover {
+    background: lighten($light-blue, 20%);
+  }
+
+  &:active {
+    background: darken($light-blue, 10%);
+  }
 }
 
 @media (max-width: $tablet) {

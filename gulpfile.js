@@ -83,7 +83,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src("source/js/**")
+  return gulp.src("source/js/vendors/*.js")
     .pipe(concat("vendors.js"))
     .pipe(gulp.dest("build/js"));
 });

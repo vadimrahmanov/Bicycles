@@ -54,6 +54,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-size: 13px 18px;
+
+  &:hover {
+    background-color: lighten($light-blue, 20%);
+  }
+
+  &:active {
+    background-color: darken($light-blue, 10%);
+  }
 }
 
 .video__player img {
