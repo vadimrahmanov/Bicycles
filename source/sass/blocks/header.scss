@@ -1,5 +1,5 @@
 .header {
-  background-color: #0e0e0e;
+  background-color: $black-header;
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -97,11 +97,11 @@
   }
 
   &:hover {
-    border-color: #0ad9c6;
+    border-color: $light-blue;
   }
 
   &:focus {
-    outline-color: #0ad9c6;
+    outline-color: $light-blue;
   }
 }
 
@@ -109,9 +109,9 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
-  color: #000000;
+  color: $black;
   width: 325px;
-  background: #0ad9c6;
+  background: $light-blue;
   border-radius: 6px;
   border: none;
   min-height: 51px;
@@ -137,15 +137,15 @@
 
   .header__banner {
     background-position: top center;
-    background-image: url("../img/banner-tablet.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
-    background-color: #0e0e0e;
+    background-image: url("../img/banner-tablet.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, $black-header 15%, $black-header 50%);
+    background-color: $black-header;
     background-size: 768px, auto;
     background-repeat: no-repeat;
     margin-top: 0;
     flex-direction: column;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/banner-tablet@2x.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
+      background-image: url("../img/banner-tablet@2x.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, $black-header 15%, $black-header 50%);
     }
   }
 
@@ -183,7 +183,7 @@
 
   .header__form-container p {
     font-size: 18px;
-    color: #000000;
+    color: $black;
     margin-bottom: 30px;
     min-height: 56px;
     width: 100%;
@@ -202,10 +202,10 @@
 @media (max-width: $mobile) {
   .header__banner {
     background-size: 319px, auto;
-    background-image: url("../img/banner-mobile.jpg"), linear-gradient(to top, $white 48%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
+    background-image: url("../img/banner-mobile.jpg"), linear-gradient(to top, $white 48%, $white 12%, $black-header 15%, $black-header 50%);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/banner-mobile@2x.jpg"), linear-gradient(to top, $white 48%, $white 12%, #0e0e0e 15%, #0e0e0e 50%);
+      background-image: url("../img/banner-mobile@2x.jpg"), linear-gradient(to top, $white 48%, $white 12%, $black-header 15%, $black-header 50%);
     }
   }
 

@@ -10,7 +10,7 @@
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: #1f1f1f;
+  color: $black-title;
   width: 365px;
   margin: 0 auto;
   padding-left: 18px;
@@ -41,7 +41,7 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: -1.27273px;
-    color: #0ad9c6;
+    color: $light-blue;
   }
 }
 
@@ -50,7 +50,7 @@
   line-height: 34px;
   text-align: center;
   letter-spacing: -0.5px;
-  color: #000000;
+  color: $black;
   margin: 0;
   padding-top: 14px;
 }

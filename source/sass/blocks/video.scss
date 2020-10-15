@@ -1,7 +1,7 @@
 .video {
   margin-top: 2px;
   margin-bottom: 80px;
-  background-image: linear-gradient(to top, $white 0%, $white 12.2%, #131314 11%, #131314 58%);
+  background-image: linear-gradient(to top, $white 0%, $white 12.2%, $black-video 11%, $black-video 58%);
 }
 
 .video__main-container {
@@ -42,7 +42,7 @@
 .video__player button {
   width: 65px;
   height: 65px;
-  background-color: #0ad9c6;
+  background-color: $light-blue;
   border: none;
   border-radius: 50%;
   background-image: url("../img/icon-play.svg");
@@ -64,7 +64,7 @@
 
 @media (max-width: $tablet) {
   .video {
-    background-image: linear-gradient(to top, $white 0%, $white 17%, #131314 11%, #131314 58%);
+    background-image: linear-gradient(to top, $white 0%, $white 17%, $black-video 11%, $black-video 58%);
     margin-bottom: 60px;
   }
 
@@ -101,7 +101,7 @@
 
 @media (max-width: $mobile) {
   .video {
-    background-image: linear-gradient(to top, $white 0%, $white 11%, #131314 11%, #131314 58%);
+    background-image: linear-gradient(to top, $white 0%, $white 11%, $black-video 11%, $black-video 58%);
   }
 
   .video__main-container {
