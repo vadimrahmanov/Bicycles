@@ -10,6 +10,7 @@
   padding-left: 22px;
   padding-right: 25px;
   padding-bottom: 9px;
+  flex-wrap: wrap;
 
   &::after {
     position: absolute;
@@ -64,7 +65,6 @@
     padding-left: 0;
     padding-right: 0;
     box-sizing: border-box;
-    height: 100vh;
     justify-content: flex-start;
 
     &::after {
@@ -75,6 +75,7 @@
 
   .navigation .nav-opened {
     padding-bottom: 26px;
+    height: 100vh;
   }
 
   .navigation .nav-close {

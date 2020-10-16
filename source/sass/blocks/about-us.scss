@@ -21,7 +21,6 @@
   counter-reset: li;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-left: 137px;
   margin-right: 137px;
 }
@@ -29,6 +28,11 @@
 .about-us li {
   width: 263px;
   padding-top: 50px;
+  padding-right: 30px;
+
+  &:last-child {
+    padding-right: 0;
+  }
 
   &::before {
     position: relative;
@@ -59,6 +63,8 @@
   .about-us {
     margin-top: 40px;
     padding-bottom: 51px;
+    margin: 0 auto;
+    width: 768px;
   }
 
   .about-us h2 {
@@ -71,14 +77,26 @@
   .about-us ol {
     margin-left: 106px;
     margin-right: 106px;
+    flex-wrap: wrap;
   }
 
   .about-us li {
     padding-top: 36px;
+    padding-right: 0;
   }
 }
 
 @media (max-width: $mobile) {
+  .about-us {
+    width: 293px;
+    margin: 150px auto 0;
+  }
+
+  .about-us h2 {
+    width: 100%;
+    text-align: center;
+  }
+
   .about-us ol {
     width: 281px;
     margin: 0 auto;

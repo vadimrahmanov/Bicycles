@@ -13,7 +13,4 @@
     navigation.classList.toggle('navigation--opened');
     navigationHandler.classList.toggle('nav-btn-opened');
   });
-
-  // eslint-disable-next-line no-undef
-  svg4everybody();
 })();
