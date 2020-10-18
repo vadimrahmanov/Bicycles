@@ -1,11 +1,11 @@
-.header {
+.header { // без ретины
   background-color: $black-header;
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 825px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) { // ретина
     background-image: url("../img/banner@2x.jpg");
     background-size: 1440px;
   }
@@ -147,7 +147,7 @@
     padding-top: 25px;
   }
 
-  .header__banner {
+  .header__banner { // без ретины
     background-position: top center;
     background-image: url("../img/banner-tablet.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, $black-header 15%, $black-header 50%);
     background-color: $black-header;
@@ -156,7 +156,7 @@
     margin-top: 0;
     flex-direction: column;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) { // ретина
       background-image: url("../img/banner-tablet@2x.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, $black-header 15%, $black-header 50%);
     }
   }
@@ -212,12 +212,12 @@
   }
 }
 
-@media (max-width: $mobile) {
+@media (max-width: $mobile) { // без ретины
   .header__banner {
     background-size: 319px, auto;
     background-image: url("../img/banner-mobile.jpg"), linear-gradient(to top, $white 48%, $white 12%, $black-header 15%, $black-header 50%);
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) { // ретина
       background-image: url("../img/banner-mobile@2x.jpg"), linear-gradient(to top, $white 48%, $white 12%, $black-header 15%, $black-header 50%);
     }
   }
@@ -249,7 +249,7 @@
     margin-top: 122px;
   }
 
-  .header__form-container form  {
+  .header__form-container form {
     width: 288px;
   }
 
