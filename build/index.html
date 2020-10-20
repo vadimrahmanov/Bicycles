@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-medium.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-light.woff2" as="font">
 </head>
 <body>
   <header class="header">
@@ -48,7 +50,7 @@
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" required="">
             <label for="phone">Телефон</label>
-            <input type="tel" id="phone" name="tel" placeholder="Введите Ваш номер телефона" pattern="+[0-9]" min="8" maxlength="13" required="">
+            <input type="tel" id="phone" name="tel" placeholder="Введите Ваш номер телефона" pattern="+[0-9]()" min="8" maxlength="13" required="">
             <button type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
@@ -81,6 +83,7 @@
             <picture>
               <source type="image/webp" srcset="img/roadbike.webp 1x, img/roadbike@2x.webp 2x">
               <img src="img/roadbike.jpg" srcset="img/roadbike@2x.jpg 2x" width="342" height="503" loading="lazy" alt="Изображение дорожного велосипеда">
+              <!--Размер без ретины 342x503, с ретиной 684x1006-->
             </picture>
             <h3>Дорожный велосипед</h3>
           </li>
@@ -88,6 +91,7 @@
             <picture>
               <source type="image/webp" srcset="img/mountainbike.webp 1x, img/mountainbike@2x.webp 2x">
               <img src="img/mountainbike.jpg" srcset="img/mountainbike@2x.jpg 2x" width="342" height="566" loading="lazy" alt="Изображение горного велосипеда">
+              <!--Размер без ретины 342x566, с ретиной 684x1132-->
             </picture>
             <h3>Горный велосипед</h3>
           </li>
@@ -95,6 +99,7 @@
             <picture>
               <source type="image/webp" srcset="img/childbike.webp 1x, img/childbike@2x.webp 2x">
               <img src="img/childbike.jpg" srcset="img/childbike@2x.jpg 2x" width="342" height="512" loading="lazy" alt="Изображение детского велосипеда">
+              <!--Размер без ретины 342x512, с ретиной 684x1024-->
             </picture>
             <h3>Детский велосипед</h3>
           </li>
@@ -107,6 +112,7 @@
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__player">
           <img src="img/bike-player.jpg" width="929" height="522" loading="lazy" alt="Видео о велосипедах">
+          <!--Размер без ретины 929x522, с ретиной 1858x1044-->
           <button type="button">
             <span class="visually-hidden">Запустить видео</span>
           </button>
