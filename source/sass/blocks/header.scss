@@ -3,6 +3,7 @@
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   min-height: 825px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) { // ретина
@@ -148,21 +149,21 @@
   }
 
   .header__banner { // без ретины
-    background-position: top center;
-    background-image: url("../img/banner-tablet.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, $black-header 15%, $black-header 50%);
-    background-color: $black-header;
-    background-size: 768px, auto;
-    background-repeat: no-repeat;
     margin-top: 0;
     flex-direction: column;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) { // ретина
-      background-image: url("../img/banner-tablet@2x.jpg"), linear-gradient(to top, $white 50.2%, $white 12%, $black-header 15%, $black-header 50%);
-    }
   }
 
   .header__about-container {
     margin-top: 0;
+    background-image: url("../img/banner-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 340px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) { // ретина
+      background-image: url("../img/banner-tablet@2x.jpg");
+    }
   }
 
   .header__about-container h1 {
@@ -186,7 +187,7 @@
   .header__form-container {
     margin-left: 29.2%;
     margin-right: 29%;
-    margin-top: 132px;
+    margin-top: 52px;
   }
 
   .header__form-container form {
@@ -213,12 +214,12 @@
 }
 
 @media (max-width: $mobile) { // без ретины
-  .header__banner {
-    background-size: 319px, auto;
-    background-image: url("../img/banner-mobile.jpg"), linear-gradient(to top, $white 48%, $white 12%, $black-header 15%, $black-header 50%);
+  .header__about-container {
+    background-image: url("../img/banner-mobile.jpg");
+    min-height: 390px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) { // ретина
-      background-image: url("../img/banner-mobile@2x.jpg"), linear-gradient(to top, $white 48%, $white 12%, $black-header 15%, $black-header 50%);
+      background-image: url("../img/banner-mobile@2x.jpg");
     }
   }
 
@@ -246,7 +247,6 @@
   .header__form-container {
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 122px;
   }
 
   .header__form-container form {

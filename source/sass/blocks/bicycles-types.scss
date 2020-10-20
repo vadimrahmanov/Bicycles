@@ -1,6 +1,7 @@
 .bicycles-types {
   margin-top: 22px;
   background-color: #f6f7f9;
+  padding-bottom: 148px;
 }
 
 .bicycles-types__main-container {
@@ -25,12 +26,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 60px;
-  margin-left: 169px;
-  margin-right: 145px;
+  margin-left: 11.72%;
+  margin-right: 10.1%;
 }
 
 .bicycles-types__main-container li {
-  margin-bottom: 147px;
+  width: 30.35%;
+  display: flex;
+  flex-direction: column;
 
   &:nth-child(3n+1) {
     position: relative;
@@ -89,6 +92,11 @@
   }
 }
 
+.bicycles-types__main-container img {
+  width: 100%;
+  height: 99%;
+}
+
 .bicycles-types__main-container h3 {
   font-size: 22px;
   font-weight: 600;
@@ -132,6 +140,8 @@
   .bicycles-types__main-container li {
     margin-bottom: 50px;
     margin-right: 50px;
+    width: auto;
+    display: block;
 
     &:nth-child(3n+1) {
       &::before {
