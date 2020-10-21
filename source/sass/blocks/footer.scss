@@ -46,7 +46,7 @@
 .footer__contacts-container {
   display: flex;
   margin: 0 auto;
-  width: 564px;
+  width: 604px;
   margin-top: 35px;
   flex-wrap: wrap;
 }
@@ -54,12 +54,14 @@
 .footer__contacts-email {
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 
 .footer__contacts-tel {
   display: flex;
   align-items: center;
-  margin-left: 93px;
+  padding-left: 20px;
+  margin-left: 73px;
 }
 
 .footer__contacts-tel svg {
@@ -132,7 +134,7 @@
   }
 
   .footer__contacts-container {
-    width: 558px;
+    width: 598px;
     margin-top: 17px;
   }
 }
@@ -181,6 +183,7 @@
   .footer__contacts-tel {
     width: 201px;
     margin-left: 5px;
+    padding-left: 0;
   }
 
   .footer__contacts-tel svg {

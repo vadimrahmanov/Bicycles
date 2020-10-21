@@ -3,6 +3,7 @@
 (function () {
   var header = document.querySelector('header');
   var navigation = document.querySelector('.navigation');
+  var body = document.querySelector('body');
 
   if (header.contains(navigation)) {
     var navigationHandler = document.querySelector('.navigation button');
@@ -15,6 +16,7 @@
       navigationList.classList.toggle('nav-opened');
       navigation.classList.toggle('navigation--opened');
       navigationHandler.classList.toggle('nav-btn-opened');
+      body.classList.toggle('nav-opened');
     });
   }
 
