@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Интернет магазин велосипедов">
-  <meta name="keywords" content="велосипеды, bicycles, новый велосипед, горный велосипед, детский велосипед, купить велосипед">
+  <meta name="description" content="Bicycles e-Store">
+  <meta name="keywords" content="Bicycles, buy bicycle, mountain bike, bikes, buy bike, bicycles for kids">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Велосипеды</title>
+  <title>Bicycles Online Store</title>
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
@@ -14,44 +15,45 @@
   <link rel="preload" href="fonts/opensans-medium.woff2" as="font">
   <link rel="preload" href="fonts/opensans-light.woff2" as="font">
 </head>
+
 <body>
   <header class="header">
     <div class="header__main-container">
       <nav class="navigation">
         <button type="button">
-          <span class="visually-hidden">Кнопка открытия/закрытия меню</span>
+          <span class="visually-hidden">Open/close menu button</span>
         </button>
         <ul>
           <li>
-            <a href="#about">О нас</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#bicycles-types">Виды велосипедов</a>
+            <a href="#bicycles-types">Types of bicycles</a>
           </li>
           <li>
-            <a href="#video">Видео про велосипеды</a>
+            <a href="#video">Video about bicycles</a>
           </li>
           <li>
-            <a href="#contacts">Контакты</a>
+            <a href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
       <div class="header__banner">
         <div class="header__about-container">
           <a>
-            <img src="img/logo.svg" width="67" height="20" loading="lazy" alt="Логотип нашего сайта">
+            <img src="img/logo.svg" width="67" height="20" loading="lazy" alt="Our logo">
           </a>
-          <h1>Мы продаем велосипеды</h1>
-          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          <h1>We sell bicycles</h1>
+          <p>Our store selects only the best bikes for sale</p>
         </div>
         <div class="header__form-container">
-          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <p>Fill in the fields below and we will select the bike of your dreams</p>
           <form action="https://echo.htmlacademy.ru/" method="GET">
-            <label for="name">Имя</label>
-            <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" required="">
-            <label for="phone">Телефон</label>
-            <input type="tel" id="phone" name="tel" placeholder="Введите Ваш номер телефона" pattern="+[0-9]()" min="8" maxlength="13" required="">
-            <button type="submit">Подобрать велосипед мечты</button>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required="">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="tel" placeholder="Your phone number" pattern="+[0-9]()" min="8" maxlength="13" required="">
+            <button type="submit">Pick up your dream bike</button>
           </form>
         </div>
       </div>
@@ -59,62 +61,62 @@
   </header>
   <main>
     <section class="about-us" id="about">
-      <h2>Несколько фактов о нас</h2>
+      <h2>Few facts about us</h2>
       <ol>
         <li>
-          <p>Самый широкий выбор велосипедов!</p>
+          <p>The widest selection of bicycles!</p>
         </li>
         <li>
-          <p>Доставка велосипедов по всей России!</p>
+          <p>Delivery across the UK!</p>
         </li>
         <li>
-          <p>Большой выбор крутых аксессуаров!</p>
+          <p>Huge selection of great accessories!</p>
         </li>
         <li>
-          <p>Профессиональные консультации!</p>
+          <p>Professional advice!</p>
         </li>
       </ol>
     </section>
     <section class="bicycles-types" id="bicycles-types">
       <div class="bicycles-types__main-container">
-        <h2>Виды велосипедов</h2>
+        <h2>Types of bicycles</h2>
         <ul>
           <li>
             <picture>
               <source type="image/webp" srcset="img/roadbike.webp 1x, img/roadbike@2x.webp 2x">
-              <img src="img/roadbike.jpg" srcset="img/roadbike@2x.jpg 2x" width="342" height="503" loading="lazy" alt="Изображение дорожного велосипеда">
-              <!--Размер без ретины 342x503, с ретиной 684x1006-->
+              <img src="img/roadbike.jpg" srcset="img/roadbike@2x.jpg 2x" width="342" height="503" loading="lazy" alt="Road bike's picture">
+              <!--Size without retina 342x503, retina size 684x1006-->
             </picture>
-            <h3>Дорожный велосипед</h3>
+            <h3>Road bike</h3>
           </li>
           <li>
             <picture>
               <source type="image/webp" srcset="img/mountainbike.webp 1x, img/mountainbike@2x.webp 2x">
-              <img src="img/mountainbike.jpg" srcset="img/mountainbike@2x.jpg 2x" width="342" height="566" loading="lazy" alt="Изображение горного велосипеда">
-              <!--Размер без ретины 342x566, с ретиной 684x1132-->
+              <img src="img/mountainbike.jpg" srcset="img/mountainbike@2x.jpg 2x" width="342" height="566" loading="lazy" alt="Mountain bike's picture">
+              <!--Size without retina 342x566, retina size 684x1132-->
             </picture>
-            <h3>Горный велосипед</h3>
+            <h3>Mountain bike</h3>
           </li>
           <li>
             <picture>
               <source type="image/webp" srcset="img/childbike.webp 1x, img/childbike@2x.webp 2x">
-              <img src="img/childbike.jpg" srcset="img/childbike@2x.jpg 2x" width="342" height="512" loading="lazy" alt="Изображение детского велосипеда">
-              <!--Размер без ретины 342x512, с ретиной 684x1024-->
+              <img src="img/childbike.jpg" srcset="img/childbike@2x.jpg 2x" width="342" height="512" loading="lazy" alt="Children bicycle's picture">
+              <!--Size without retina 342x512, retina size 684x1024-->
             </picture>
-            <h3>Детский велосипед</h3>
+            <h3>Children bicycle</h3>
           </li>
         </ul>
       </div>
     </section>
     <section class="video" id="video">
       <div class="video__main-container">
-        <h2>Видео про велосипеды</h2>
-        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <h2>Video about bicycles</h2>
+        <p>In this video we will tell you in detail about the features of choosing a bike for yourself.</p>
         <div class="video__player">
-          <img src="img/bike-player.jpg" width="929" height="522" loading="lazy" alt="Видео о велосипедах">
-          <!--Размер без ретины 929x522, с ретиной 1858x1044-->
+          <img src="img/bike-player.jpg" width="929" height="522" loading="lazy" alt="Video about bicycles">
+          <!--Size without retina 929x522, retina size 1858x1044-->
           <button type="button">
-            <span class="visually-hidden">Запустить видео</span>
+            <span class="visually-hidden">Play video</span>
           </button>
         </div>
       </div>
@@ -122,27 +124,34 @@
   </main>
   <footer class="footer" id="contacts">
     <div class="footer__main-container">
-      <h2>Как нас найти?</h2>
-      <address class="footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
-      <iframe class="footer__map" title="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616173568!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2suk!4v1602532834195!5m2!1sru!2suk" tabindex="0">
+      <h2>How to find us?</h2>
+      <address class="footer__address">We are located at: 18 High Street, Doncaster</address>
+      <iframe class="footer__map" title="We are located at: 18 High Street, Doncaster" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.9379761462787!2d-1.135679584018355!3d53.52316456915296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48790dd034e51e97%3A0x5acf644757dea428!2s18%20High%20St%2C%20Doncaster!5e0!3m2!1sen!2suk!4v1606147590078!5m2!1sen!2suk" tabindex="0">
       </iframe>
       <div class="footer__contacts-container">
         <div class="footer__contacts-email">
           <svg width="26" height="20">
             <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
           </svg>
-          <a class="footer__contacts-email-link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a class="footer__contacts-email-link" href="mailto:dream_travel@gmail.com">dream_travel@gmail.com</a>
         </div>
         <div class="footer__contacts-tel">
           <svg width="20" height="24">
             <use xlink:href="img/sprite_auto.svg#icon-tel"></use>
           </svg>
-          <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <a href="tel:+749978468446">+447849339327</a>
         </div>
+      </div>
+      <div class="footer__language">
+        <a href="index_ru.html">
+          <img src="img/rus_flag.png" width="32" height="32" alt="Russian's flag picture">
+          По-русски
+        </a>
       </div>
     </div>
   </footer>
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
